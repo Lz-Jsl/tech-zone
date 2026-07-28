@@ -1,0 +1,165 @@
+<!-- License ID: DEVOMATE-SRC-20260728-ETAUC7KTRI | aswinjr84@gmail.com | 2026-07-28 13:05:43 -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Devomate Mobile Store — layout demo</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+        <div class="container-fluid px-4">
+
+            <!-- Brand -->
+            <a class="navbar-brand fw-bold" href="#">Devomate Mobile Store</a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links + Search + Icons -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!-- Center Nav Links -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                
+                </ul>
+
+                <!-- Search + Icons -->
+                <form class="d-flex align-items-center" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary me-3" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="text-dark"><i class="bi bi-heart"></i></a>
+                    <a href="cart.html" class="text-dark"><i class="bi bi-cart"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-person"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+<!-- Contact Form Section -->
+<div class="contact-section my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="p-5 border rounded shadow-sm">
+        <h3 class="mb-4 text-center">Contact Us</h3>
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="john@example.com" required>
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="text" class="form-control" id="phone" placeholder="+91 9876543210">
+            </div>
+            <div class="col-md-6">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Subject">
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Write your message..." required></textarea>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <button type="submit" class="btn btn-dark px-5 text-white">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light pt-5 pb-3">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- Brand + Description -->
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold text-uppercase mb-3">Devomate</h5>
+                    <p class="text-secondary mb-4">
+                        We are a creative digital studio based in Maharashtra, Ratnagiri — crafting modern
+                        websites, mobile apps, and UI/UX designs to elevate your business presence.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-6 col-md-4">
+                    <h6 class="fw-semibold mb-3">Services</h6>
+                    <ul class="list-unstyled text-secondary">
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Web Development</a>
+                        </li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">App Development</a>
+                        </li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">UI/UX Design</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Source Code
+                                Templates</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Custom Projects</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Assistance -->
+                <div class="col-6 col-md-4">
+                    <h6 class="fw-semibold mb-3">Support</h6>
+                    <ul class="list-unstyled text-secondary">
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Contact Us</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Privacy Policy</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Refund Policy</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">FAQs</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom line -->
+            <div class="border-top border-secondary mt-4 pt-3 text-center text-secondary small">
+                © 2025 Devomate. All Rights Reserved. | Made with ❤️ in Maharashtra, Ratnagiri
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

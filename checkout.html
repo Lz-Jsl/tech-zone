@@ -1,0 +1,257 @@
+<!-- License ID: DEVOMATE-SRC-20260728-ETAUC7KTRI | aswinjr84@gmail.com | 2026-07-28 13:05:43 -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Devomate Mobile Store — layout demo</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<style>
+    .cart-img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .quantity-group .quantity-input {
+        width: 50px;
+        padding: 0.25rem 0;
+        text-align: center;
+    }
+
+    .quantity-group .btn {
+        padding: 0.25rem 0.5rem;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+        <div class="container-fluid px-4">
+
+            <!-- Brand -->
+            <a class="navbar-brand fw-bold" href="#">Devomate Mobile Store</a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links + Search + Icons -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!-- Center Nav Links -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                
+                </ul>
+
+                <!-- Search + Icons -->
+                <form class="d-flex align-items-center" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary me-3" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="text-dark"><i class="bi bi-heart"></i></a>
+                    <a href="cart.html" class="text-dark"><i class="bi bi-cart"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-person"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <!-- Checkout Page Section -->
+        <div class="row my-5 g-4">
+
+            <!-- Grid 1: Products -->
+            <div class="col-lg-7">
+                <h3 class="mb-4">Your Products</h3>
+
+                <!-- Product Item -->
+                <div class="cart-item d-flex align-items-center border-bottom py-3">
+                    <img src="images/p1.png" class="cart-img me-3" alt="Product Image">
+                    <div class="flex-grow-1">
+                        <h6 class="mb-2">Apple iPhone 14 Pro Max</h6>
+                        <div class="d-flex align-items-center">
+                            <span class="me-3">Quantity:</span>
+                            <div class="input-group quantity-group me-3" style="width:120px;">
+                                <button class="btn btn-outline-secondary btn-sm minus-btn" type="button">-</button>
+                                <input type="text" class="form-control text-center quantity-input" value="1" readonly>
+                                <button class="btn btn-outline-secondary btn-sm plus-btn" type="button">+</button>
+                            </div>
+                            <span class="fw-bold">₹90,000</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-danger btn-sm ms-3"><i class="bi bi-x-lg"></i></button>
+                </div>
+
+                <div class="cart-item d-flex align-items-center border-bottom py-3">
+                    <img src="images/p2.png" class="cart-img me-3" alt="Product Image">
+                    <div class="flex-grow-1">
+                        <h6 class="mb-2">Blackmagic Pocket 6K</h6>
+                        <div class="d-flex align-items-center">
+                            <span class="me-3">Quantity:</span>
+                            <div class="input-group quantity-group me-3" style="width:120px;">
+                                <button class="btn btn-outline-secondary btn-sm minus-btn" type="button">-</button>
+                                <input type="text" class="form-control text-center quantity-input" value="1" readonly>
+                                <button class="btn btn-outline-secondary btn-sm plus-btn" type="button">+</button>
+                            </div>
+                            <span class="fw-bold">₹24,535</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-danger btn-sm ms-3"><i class="bi bi-x-lg"></i></button>
+                </div>
+
+                <div class="cart-item d-flex align-items-center border-bottom py-3">
+                    <img src="images/p3.png" class="cart-img me-3" alt="Product Image">
+                    <div class="flex-grow-1">
+                        <h6 class="mb-2">Apple Watch Series 9</h6>
+                        <div class="d-flex align-items-center">
+                            <span class="me-3">Quantity:</span>
+                            <div class="input-group quantity-group me-3" style="width:120px;">
+                                <button class="btn btn-outline-secondary btn-sm minus-btn" type="button">-</button>
+                                <input type="text" class="form-control text-center quantity-input" value="1" readonly>
+                                <button class="btn btn-outline-secondary btn-sm plus-btn" type="button">+</button>
+                            </div>
+                            <span class="fw-bold">₹39,999</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-danger btn-sm ms-3"><i class="bi bi-x-lg"></i></button>
+                </div>
+
+            </div>
+
+            <!-- Grid 2: Billing + Payment -->
+            <div class="col-lg-5">
+                <div class="p-4 border rounded mb-4">
+                    <h4 class="mb-4">Billing Details</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="John Doe">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="john@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="phone" placeholder="+91 9876543210">
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea class="form-control" id="address" rows="3"
+                                placeholder="123, Street, City, State, Pincode"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="p-4 border rounded">
+                    <h4 class="mb-4">Payment Methods</h4>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" checked>
+                        <label class="form-check-label" for="creditCard">Credit / Debit Card</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="netBanking">
+                        <label class="form-check-label" for="netBanking">Net Banking</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="upi">
+                        <label class="form-check-label" for="upi">UPI / Wallet</label>
+                    </div>
+
+                    <button class="btn btn-dark w-100 mt-3 text-white">Place Order</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light pt-5 pb-3">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- Brand + Description -->
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold text-uppercase mb-3">Devomate</h5>
+                    <p class="text-secondary mb-4">
+                        We are a creative digital studio based in Maharashtra, Ratnagiri — crafting modern
+                        websites, mobile apps, and UI/UX designs to elevate your business presence.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-6 col-md-4">
+                    <h6 class="fw-semibold mb-3">Services</h6>
+                    <ul class="list-unstyled text-secondary">
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Web Development</a>
+                        </li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">App Development</a>
+                        </li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">UI/UX Design</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Source Code
+                                Templates</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Custom Projects</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Assistance -->
+                <div class="col-6 col-md-4">
+                    <h6 class="fw-semibold mb-3">Support</h6>
+                    <ul class="list-unstyled text-secondary">
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Contact Us</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Privacy Policy</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Refund Policy</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">FAQs</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom line -->
+            <div class="border-top border-secondary mt-4 pt-3 text-center text-secondary small">
+                © 2025 Devomate. All Rights Reserved. | Made with ❤️ in Maharashtra, Ratnagiri
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

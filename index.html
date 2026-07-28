@@ -1,0 +1,518 @@
+<!-- License ID: DEVOMATE-SRC-20260728-ETAUC7KTRI | aswinjr84@gmail.com | 2026-07-28 13:05:43 -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Devomate Mobile Store — layout demo</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+        <div class="container-fluid px-4">
+
+            <!-- Brand -->
+            <a class="navbar-brand fw-bold" href="#">Devomate Mobile Store</a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links + Search + Icons -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!-- Center Nav Links -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+
+                </ul>
+
+                <!-- Search + Icons -->
+                <form class="d-flex align-items-center" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary me-3" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="text-dark"><i class="bi bi-heart"></i></a>
+                    <a href="cart.html" class="text-dark"><i class="bi bi-cart"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-person"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO: full image only -->
+    <section class="hero">
+        <img src="images/banner1.png" alt="hero image" class="hero-img">
+    </section>
+
+
+    <!-- PRODUCTS SECTION -->
+    <div class="container-fluid px-0">
+        <div class="row gx-0">
+            <!-- LEFT GRID -->
+            <div class="col-lg-6 col-md-12">
+                <div class="row gx-0">
+                    <!-- Top full-width image -->
+                    <div class="col-12">
+                        <img src="images/banner2.png" class="img-fluid w-100" alt="Top Image">
+                    </div>
+                    <!-- Bottom two half-width images -->
+                    <div class="col-6">
+                        <img src="images/banner3.png" class="img-fluid w-100" alt="Bottom Left">
+                    </div>
+                    <div class="col-6">
+                        <img src="images/banner4.png" class="img-fluid w-100" alt="Bottom Right">
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT GRID (single tall image) -->
+            <div class="col-lg-6 col-md-12">
+                <img src="images/banner5.png" class="img-fluid w-100 h-100" style="object-fit: cover;"
+                    alt="Right Tall Image">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- CATEGORIES SECTION -->
+    <section class="py-5 border-bottom">
+        <div class="container">
+            <h5 class="fw-semibold mb-4">Browse By Category</h5>
+
+            <div class="row g-3 text-center">
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="border rounded-3 py-4 h-100">
+                        <i class="bi bi-phone fs-3 mb-2"></i>
+                        <div>Phones</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="border rounded-3 py-4 h-100">
+                        <i class="bi bi-smartwatch fs-3 mb-2"></i>
+                        <div>Smart Watches</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="border rounded-3 py-4 h-100">
+                        <i class="bi bi-camera fs-3 mb-2"></i>
+                        <div>Cameras</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="border rounded-3 py-4 h-100">
+                        <i class="bi bi-headphones fs-3 mb-2"></i>
+                        <div>Headphones</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="border rounded-3 py-4 h-100">
+                        <i class="bi bi-laptop fs-3 mb-2"></i>
+                        <div>Computers</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="border rounded-3 py-4 h-100">
+                        <i class="bi bi-controller fs-3 mb-2"></i>
+                        <div>Gaming</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="py-5">
+        <div class="container">
+
+            <!-- Tabs -->
+            <ul class="nav nav-tabs border-0 mb-4">
+                <li class="nav-item">
+                    <a class="nav-link active fw-semibold" data-bs-toggle="tab" href="#new">New Arrival</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" data-bs-toggle="tab" href="#bestseller">Bestseller</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" data-bs-toggle="tab" href="#featured">Featured Products</a>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+                <!-- New Arrival -->
+                <div class="tab-pane fade show active" id="new">
+                    <div class="row g-4">
+                    
+                        
+                        <div class="col-6 col-md-3">
+                            <a href="product_details.html">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="images/p1.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-2">Apple iPhone 14 Pro Max</h6>
+                                    <p class="fw-bold">₹90000</p>
+                                    <button class="btn btn-dark w-100">Buy Now</button>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <a href="product_details.html">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="images/p2.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-2">Blackmagic Pocket 6K</h6>
+                                    <p class="fw-bold">₹24535</p>
+                                    <button class="btn btn-dark w-100">Buy Now</button>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <a href="product_details.html">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="images/p3.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-2">Apple Watch Series 9</h6>
+                                    <p class="fw-bold">₹39999</p>
+                                    <button class="btn btn-dark w-100">Buy Now</button>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <a href="product_details.html">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="images/p4.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-2">AirPods Max Silver</h6>
+                                    <p class="fw-bold">₹54999</p>
+                                    <button class="btn btn-dark w-100">Buy Now</button>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+
+                        <div class="col-6 col-md-3">
+                            <a href="product_details.html">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="images/p5.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-2">Samsung Galaxy Watch 6 Classic 47mm Black</h6>
+                                    <p class="fw-bold">₹54499</p>
+                                    <button class="btn btn-dark w-100">Buy Now</button>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <a href="product_details.html">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="images/p6.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-2">Galaxy Z Fold5 Unlocked | 256GB | Phantom Black</h6>
+                                    <p class="fw-bold">₹55899</p>
+                                    <button class="btn btn-dark w-100">Buy Now</button>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="images/p7.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-2">Galaxy Buds FE
+                                        Graphite</h6>
+                                    <p class="fw-bold">₹34219</p>
+                                    <button class="btn btn-dark w-100">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="images/p8.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-2">Apple iPad 9 10.2" 64GB Wi-Fi Silver (MK2L3) 2021</h6>
+                                    <p class="fw-bold">₹78965</p>
+                                    <button class="btn btn-dark w-100">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Tabs Placeholder -->
+                <div class="tab-pane fade" id="bestseller">
+                    <div class="tab-pane fade show active" id="new">
+                        <div class="row g-4">
+
+                            <a href="product_details.html">
+
+                                <div class="col-6 col-md-3">
+                                    <div class="card border-0 shadow-sm h-100">
+                                        <img src="images/p3.png" class="card-img-top" alt="">
+                                        <div class="card-body text-center">
+                                            <h6 class="card-title mb-2">Apple Watch Series 9</h6>
+                                            <p class="fw-bold">₹39999</p>
+                                            <button class="btn btn-dark w-100">Buy Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </a>
+
+                            <a href="product_details.html">
+                                <div class="col-6 col-md-3">
+                                    <div class="card border-0 shadow-sm h-100">
+                                        <img src="images/p4.png" class="card-img-top" alt="">
+                                        <div class="card-body text-center">
+                                            <h6 class="card-title mb-2">AirPods Max Silver</h6>
+                                            <p class="fw-bold">₹54999</p>
+                                            <button class="btn btn-dark w-100">Buy Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="product_details.html">
+
+                                <div class="col-6 col-md-3">
+                                    <div class="card border-0 shadow-sm h-100">
+                                        <img src="images/p5.png" class="card-img-top" alt="">
+                                        <div class="card-body text-center">
+                                            <h6 class="card-title mb-2">Samsung Galaxy Watch 6 Classic 47mm Black</h6>
+                                            <p class="fw-bold">₹54499</p>
+                                            <button class="btn btn-dark w-100">Buy Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="product_details.html">
+                                <div class="col-6 col-md-3">
+                                    <div class="card border-0 shadow-sm h-100">
+                                        <img src="images/p6.png" class="card-img-top" alt="">
+                                        <div class="card-body text-center">
+                                            <h6 class="card-title mb-2">Galaxy Z Fold5 Unlocked | 256GB | Phantom Black
+                                            </h6>
+                                            <p class="fw-bold">₹55899</p>
+                                            <button class="btn btn-dark w-100">Buy Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tab-pane fade" id="featured">
+                    <div class="tab-pane fade show active" id="new">
+                        <div class="row g-4">
+
+
+                            <a href="product_details.html">
+                                <div class="col-6 col-md-3">
+                                    <div class="card border-0 shadow-sm h-100">
+                                        <img src="images/p3.png" class="card-img-top" alt="">
+                                        <div class="card-body text-center">
+                                            <h6 class="card-title mb-2">Apple Watch Series 9</h6>
+                                            <p class="fw-bold">₹39999</p>
+                                            <button class="btn btn-dark w-100">Buy Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="col-6 col-md-3">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <img src="images/p4.png" class="card-img-top" alt="">
+                                    <div class="card-body text-center">
+                                        <h6 class="card-title mb-2">AirPods Max Silver</h6>
+                                        <p class="fw-bold">₹54999</p>
+                                        <button class="btn btn-dark w-100">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-6 col-md-3">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <img src="images/p5.png" class="card-img-top" alt="">
+                                    <div class="card-body text-center">
+                                        <h6 class="card-title mb-2">Samsung Galaxy Watch 6 Classic 47mm Black</h6>
+                                        <p class="fw-bold">₹54499</p>
+                                        <button class="btn btn-dark w-100">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <img src="images/p6.png" class="card-img-top" alt="">
+                                    <div class="card-body text-center">
+                                        <h6 class="card-title mb-2">Galaxy Z Fold5 Unlocked | 256GB | Phantom Black</h6>
+                                        <p class="fw-bold">₹55899</p>
+                                        <button class="btn btn-dark w-100">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container-fluid px-4">
+            <div class="row g-0 text-center">
+
+                <!-- Product 1 -->
+                <div
+                    class="col-12 col-sm-6 col-lg-3 bg-white d-flex flex-column justify-content-center align-items-center p-5">
+                    <img src="images/p1.png" alt="iPhone 14 Pro" class="img-fluid mb-3" style="max-width:220px;">
+                    <h5 class="fw-semibold">iPhone 14 Pro</h5>
+                    <p class="text-muted small">Created to change everything for the better. For everyone.</p>
+                    <button class="btn btn-outline-dark mt-2 px-4">Shop Now</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-12 col-sm-6 col-lg-3 d-flex flex-column justify-content-center align-items-center p-5"
+                    style="background-color:#f2f2f2;">
+                    <img src="images/p2.png" alt="Playstation 5" class="img-fluid mb-3" style="max-width:220px;">
+                    <h5 class="fw-semibold">PlayStation 5</h5>
+                    <p class="text-muted small">Experience lightning-fast loading with ultra-high-speed SSD.</p>
+                    <button class="btn btn-outline-dark mt-2 px-4">Shop Now</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-12 col-sm-6 col-lg-3 d-flex flex-column justify-content-center align-items-center p-5"
+                    style="background-color:#bfbfbf;">
+                    <img src="images/p3.png" alt="Macbook Air" class="img-fluid mb-3" style="max-width:220px;">
+                    <h5 class="fw-semibold">MacBook Air</h5>
+                    <p class="text-light small">The M3 MacBook Air makes room for more of what you love.</p>
+                    <button class="btn btn-outline-dark bg-white mt-2 px-4">Shop Now</button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-12 col-sm-6 col-lg-3 d-flex flex-column justify-content-center align-items-center p-5"
+                    style="background-color:#2C2C2C;">
+                    <img src="images/p4.png" alt="Apple Vision Pro" class="img-fluid mb-3" style="max-width:220px;">
+                    <h5 class="fw-semibold text-white">Apple Vision Pro</h5>
+                    <p class="text-secondary small">A revolutionary spatial computer that blends digital and real
+                        worlds.</p>
+                    <button class="btn btn-outline-light mt-2 px-4">Shop Now</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- HERO: full image only -->
+    <section class="hero">
+        <img src="images/banner6.png" alt="hero image" class="hero-img">
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light pt-5 pb-3">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- Brand + Description -->
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold text-uppercase mb-3">Devomate</h5>
+                    <p class="text-secondary mb-4">
+                        We are a creative digital studio based in Maharashtra, Ratnagiri — crafting modern
+                        websites, mobile apps, and UI/UX designs to elevate your business presence.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-6 col-md-4">
+                    <h6 class="fw-semibold mb-3">Services</h6>
+                    <ul class="list-unstyled text-secondary">
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Web Development</a>
+                        </li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">App Development</a>
+                        </li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">UI/UX Design</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Source Code
+                                Templates</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Custom Projects</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Assistance -->
+                <div class="col-6 col-md-4">
+                    <h6 class="fw-semibold mb-3">Support</h6>
+                    <ul class="list-unstyled text-secondary">
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Contact Us</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Privacy Policy</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Refund Policy</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">FAQs</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom line -->
+            <div class="border-top border-secondary mt-4 pt-3 text-center text-secondary small">
+                © 2025 Devomate. All Rights Reserved. | Made with ❤️ in Maharashtra, Ratnagiri
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

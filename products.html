@@ -1,0 +1,329 @@
+<!-- License ID: DEVOMATE-SRC-20260728-ETAUC7KTRI | aswinjr84@gmail.com | 2026-07-28 13:05:43 -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Devomate Mobile Store — layout demo</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+        <div class="container-fluid px-4">
+
+            <!-- Brand -->
+            <a class="navbar-brand fw-bold" href="#">Devomate Mobile Store</a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links + Search + Icons -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!-- Center Nav Links -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                
+                </ul>
+
+                <!-- Search + Icons -->
+                <form class="d-flex align-items-center" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary me-3" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="text-dark"><i class="bi bi-heart"></i></a>
+                    <a href="cart.html" class="text-dark"><i class="bi bi-cart"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-person"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Professional Breadcrumb Section -->
+    <nav aria-label="breadcrumb" class="m-3">
+        <ol class="breadcrumb bg-white shadow-sm px-4 py-2 rounded">
+            <li class="breadcrumb-item">
+                <a href="index.html" class="text-decoration-none text-dark fw-medium">
+                    Home
+                </a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="index.html" class="text-decoration-none text-dark fw-medium">
+                    Catalog
+                </a>
+            </li>
+            <li class="breadcrumb-item active text-muted fw-medium" aria-current="page">
+                Smartphone
+            </li>
+        </ol>
+    </nav>
+
+    <style>
+        /* Add chevron separators */
+        .breadcrumb-item+.breadcrumb-item::before {
+            content: ">";
+            color: #6c757d;
+            /* muted grey */
+            padding: 0 1rem;
+        }
+
+        /* Hover effect for links */
+        .breadcrumb a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+    </style>
+
+
+
+    <div class="container my-4">
+        <div class="row">
+            <!-- Sidebar / Filters -->
+            <div class="col-md-3 mb-4">
+                <h5>Filters</h5>
+
+                <!-- Search bar -->
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Search products...">
+                </div>
+
+                <!-- Brand filter (checkbox) -->
+                <div class="mb-3">
+                    <h6>Brand</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="brandApple">
+                        <label class="form-check-label" for="brandApple">Apple</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="brandVivo">
+                        <label class="form-check-label" for="brandVivo">Vivo</label>
+                    </div>
+                </div>
+
+                <!-- Battery capacity filter (radio) -->
+                <div class="mb-3">
+                    <h6>Battery Capacity</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="battery" id="battery3000" value="3000">
+                        <label class="form-check-label" for="battery3000">3000 mAh</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="battery" id="battery4000" value="4000">
+                        <label class="form-check-label" for="battery4000">4000 mAh</label>
+                    </div>
+                </div>
+
+                <!-- Screen type filter (radio) -->
+                <div class="mb-3">
+                    <h6>Screen Type</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="screen" id="amoled" value="amoled">
+                        <label class="form-check-label" for="amoled">AMOLED</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="screen" id="lcd" value="lcd">
+                        <label class="form-check-label" for="lcd">LCD</label>
+                    </div>
+                </div>
+
+                <!-- Built-in memory (checkbox for multiple selection) -->
+                <div class="mb-3">
+                    <h6>Built-in Memory</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="memory64" value="64GB">
+                        <label class="form-check-label" for="memory64">64 GB</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="memory128" value="128GB">
+                        <label class="form-check-label" for="memory128">128 GB</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="col-md-9">
+                <!-- New Arrival -->
+                <div class="tab-pane fade show active" id="new">
+                    <div class="row g-4">
+                        <div class="col-6 col-md-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="images/p1.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-2">Apple iPhone 14 Pro Max</h6>
+                                    <p class="fw-bold">₹90000</p>
+                                    <button class="btn btn-dark w-100">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="images/p2.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-2">Blackmagic Pocket 6K</h6>
+                                    <p class="fw-bold">₹24535</p>
+                                    <button class="btn btn-dark w-100">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="images/p3.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-2">Apple Watch Series 9</h6>
+                                    <p class="fw-bold">₹39999</p>
+                                    <button class="btn btn-dark w-100">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="images/p4.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-2">AirPods Max Silver</h6>
+                                    <p class="fw-bold">₹54999</p>
+                                    <button class="btn btn-dark w-100">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="images/p5.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-2">Samsung Galaxy Watch 6 Classic 47mm Black</h6>
+                                    <p class="fw-bold">₹54499</p>
+                                    <button class="btn btn-dark w-100">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="images/p6.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-2">Galaxy Z Fold5 Unlocked | 256GB | Phantom Black</h6>
+                                    <p class="fw-bold">₹55899</p>
+                                    <button class="btn btn-dark w-100">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="images/p7.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-2">Galaxy Buds FE Graphite</h6>
+                                    <p class="fw-bold">₹34219</p>
+                                    <button class="btn btn-dark w-100">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="images/p8.png" class="card-img-top" alt="">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-2">Apple iPad 9 10.2" 64GB Wi-Fi Silver (MK2L3) 2021</h6>
+                                    <p class="fw-bold">₹78965</p>
+                                    <button class="btn btn-dark w-100">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light pt-5 pb-3">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- Brand + Description -->
+                <div class="col-12 col-md-4">
+                    <h5 class="fw-bold text-uppercase mb-3">Devomate</h5>
+                    <p class="text-secondary mb-4">
+                        We are a creative digital studio based in Maharashtra, Ratnagiri — crafting modern
+                        websites, mobile apps, and UI/UX designs to elevate your business presence.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-6 col-md-4">
+                    <h6 class="fw-semibold mb-3">Services</h6>
+                    <ul class="list-unstyled text-secondary">
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Web Development</a>
+                        </li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">App Development</a>
+                        </li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">UI/UX Design</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Source Code
+                                Templates</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Custom Projects</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Assistance -->
+                <div class="col-6 col-md-4">
+                    <h6 class="fw-semibold mb-3">Support</h6>
+                    <ul class="list-unstyled text-secondary">
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Contact Us</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Privacy Policy</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Refund Policy</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">FAQs</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none d-block py-1">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom line -->
+            <div class="border-top border-secondary mt-4 pt-3 text-center text-secondary small">
+                © 2025 Devomate. All Rights Reserved. | Made with ❤️ in Maharashtra, Ratnagiri
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
