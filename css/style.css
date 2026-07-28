@@ -1,0 +1,164 @@
+/* License ID: DEVOMATE-SRC-20260728-ETAUC7KTRI | aswinjr84@gmail.com | 2026-07-28 13:05:43 */
+.nav-tabs .nav-link.active {
+    border: none;
+    border-bottom: 2px solid #0d6efd;
+}
+
+.nav-tabs .nav-link {
+    color: #000;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #0d6efd;
+}
+
+
+
+
+
+
+
+/* Reviews Section CSS */
+.progress {
+    background-color: #e9ecef;
+    /* light grey */
+    border-radius: 5px;
+}
+
+.progress-bar {
+    border-radius: 5px;
+}
+
+
+/* Product Images CSS */
+.thumbnail-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.thumbnail-img:hover,
+.thumbnail-img.active-thumb {
+    border: 2px solid #000;
+}
+
+.main-image-wrapper {
+    height: 450px;
+    /* adjust height as needed */
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image-wrapper img.main-image {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.thumbnail-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.color-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+}
+
+.storage-option {
+    border: 1px solid #000;
+    padding: 5px 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.feature-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.feature-title {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+.feature-value {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.action-btn {
+    margin-right: 10px;
+}
+
+/* Product Details / Specifications CSS */
+.product-specs h3 {
+    font-weight: 600;
+}
+
+.product-specs h5 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.product-specs .row {
+    padding: 0.5rem 0;
+}
+
+.product-specs .border-bottom {
+    border-color: #dee2e6 !important;
+}
+
+/* Add chevron separators */
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
+    color: #6c757d;
+    /* muted grey */
+    padding: 0 1rem;
+}
+
+/* Hover effect for links */
+.breadcrumb a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+
+
+
+/* Customer Reviews CSS */
+.customer-reviews h3 {
+  font-weight: 600;
+}
+
+.review p {
+  margin-bottom: 0;
+  color: #495057;
+}
+
+.review .bi-star-fill {
+  font-size: 1rem;
+}
+
+.review img {
+  object-fit: cover;
+}
